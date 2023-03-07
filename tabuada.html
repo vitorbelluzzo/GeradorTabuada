@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./scripts.js"></script>
+    <title>Tabuada</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #titulo_pagina {
+      text-align: center;
+      padding: 20px;
+      color: rgba(255, 255, 255, 0.951);
+    }
+
+    body {
+      background-color: rgb(72, 8, 235);
+    }
+
+    #container {
+      background-color: white;
+      width: 70%;
+      min-width: 60%;
+      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.381);
+      border: none;
+      border-radius: 8px;
+      display: grid;
+      padding: 3%;
+      margin: auto;
+    }
+    .num {
+      display: grid;
+      gap: 15px;
+      padding: 4px;
+      align-items: center;
+      text-align: center;
+    }
+    #btn {
+      padding: 10px;
+      border-radius: 20px;
+      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.381);
+      border: none;
+    }
+    #tabuada {
+      margin-top: 20px;
+    }
+  </style>
+
+  <body>
+    <h1 id="titulo_pagina">Tabuada</h1>
+    <div class="" id="container">
+      <div class="num">
+        <input type="number" id="numero" placeholder="Insira um nùmero" />
+        <input type="button" id="btn" value="Gerar Tabuada" onclick="gerar()" />
+      </div>
+      <select name="tabuada" id="tabuada"></select>
+    </div>
+  </body>
+  
+</html>
