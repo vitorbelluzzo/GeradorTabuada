@@ -9,7 +9,7 @@ function gerar() {
       for (let i = 1; i <= 10; i++) {
         var resultTab = i * num;
         var option = document.createElement('option');
-        option.innerText = (`${num} * ${i} = ${resultTab}`);
+        option.innerText = (`${num} X ${i} = ${resultTab}`);
         sel.appendChild(option);
       }
     }
